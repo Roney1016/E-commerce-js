@@ -1,0 +1,160 @@
+/* basic style for body and html  */
+/* general styles  */
+body, html {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container{
+    width:90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+/* style for navbar  */
+.navbar{
+    display: flex;
+    /* flex-direction: row; */
+    background-color: rgb(61, 55, 55);
+    color:#fff;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.logo-container{
+    padding-left: 1rem;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding-right: 1rem;
+    
+}
+.nav-links li{
+    /* display: inline; */
+  margin-left: 1.5rem;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding:o.5rem;
+    font-size: 1.2rem;
+    transition:color 1s ease-in-out;
+    
+}
+.nav-links a:hover {
+    /* font-size: 2rem; */
+color:red
+}
+
+
+/* style for main content  */
+.hero{
+    background-color: rgb(244, 126, 97);
+    color:#fff;
+    padding:4rem 0;
+    text-align: center;
+    
+}
+
+.hero h2{
+    font-size: 2rem;
+    /* font-weight: bolder; */
+}
+
+.hero button {
+    background-color: #333;
+    color:#fff;
+    padding: 8px 8px;
+    cursor: pointer;
+    transition:2s ease-in;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.hero button:hover{
+    background-color: lightblue;
+    box-shadow: 5px 5px 10px #333;
+    
+}
+
+/* categories section  */
+.categories{
+    text-align: center;
+    padding:3rem 0;
+}
+
+/* feature-products section  */
+
+.feature-products{
+    text-align: center;
+    padding:3rem 0;
+}
+
+/* testinonials section  */
+.testimonials{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    padding:3rem 0;
+}
+
+footer{
+    background-color: #333;
+    color:#fff;
+    margin:0;
+    padding:1.2rem 0;
+    text-align: center;
+}
+
+/* main container grid  */
+.grid{
+    display: flex;
+    padding:1.2rem 0;
+    justify-content: space-around;
+}
+
+/* here we use combine category and product  */
+.category,.product{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #333;
+    transition: 0.5s ease;
+}
+.category,.product img{
+    border-radius: 15px 0;
+    width: 200px;
+}
+.category:hover{
+    transform: scale(1.1);
+}
+.product:hover{
+    transform: scale(1.1);
+}
+
+.product p{
+    color: red;
+}
+
+.testimonial{
+
+    margin: 0 20px;
+    padding: 10px 20px;
+    background-color: #515050;
+    border-radius: 8px;
+    
+}
+
+.testimonial h3{
+    color: rgb(242, 45, 45);
+}
