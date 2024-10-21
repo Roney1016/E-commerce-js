@@ -164,4 +164,6 @@ const myPro = new product("img", "null", "111", "desss");
 const discountPro = new discount("img", "null", "111", "desss", "20%")
 // console.log(discountPro.dispaly())
 
-
+document.querySelector("#cta-button").addEventListener("click", () => {
+    window.location.href = "./E-commerce-javaScript/shop.html"
+})
