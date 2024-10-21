@@ -15,6 +15,8 @@ body, html {
 
 /* style for navbar  */
 .navbar{
+    /* position: fixed;
+    width: 100%; */
     display: flex;
     /* flex-direction: row; */
     background-color: rgb(61, 55, 55);
@@ -22,6 +24,7 @@ body, html {
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
+   
     
 
 }
@@ -58,9 +61,9 @@ color:red
 
 /* style for main content  */
 .hero{
-    background-color: rgb(244, 126, 97);
+    background-color: rgb(238, 76, 35);
     color:#fff;
-    padding:4rem 0;
+    padding:2rem 0;
     text-align: center;
     
 }
@@ -68,6 +71,11 @@ color:red
 .hero h2{
     font-size: 2rem;
     /* font-weight: bolder; */
+    animation: flash 2s ease;
+}
+.text-hero{
+    font-size: 1.2rem;
+    animation: flash 2s ease;
 }
 
 .hero button {
@@ -86,6 +94,57 @@ color:red
     box-shadow: 5px 5px 10px #333;
     
 }
+.discount{
+    background-color: #cf4942;
+    width:fit-content;
+    margin: 1rem auto;
+    border-radius: 5px;
+    
+    padding: 5px;
+    
+    font-size: 0.8rem;
+/* animation:visible  2s  infinite alternate-reverse; */
+animation:visible  3s ease-in-out infinite ;
+}
+/* keyframes for animation  */
+
+@keyframes fadeIn {
+
+    from {
+   
+   opacity: 0; /* Start with 0 opacity */
+   
+   transform: translateY(20px); /* Start position slightly below */
+   
+    }
+   
+    to {
+   
+   opacity: 1; /* End with full opacity */
+   
+   transform: translateY(0); /* End position */
+   
+    }
+   
+   }
+   
+   
+
+
+
+@keyframes visible {
+    0% { opacity: 0; }
+50%{opacity: 1;}
+    100% { opacity: 0; }
+    
+    
+}
+
+@keyframes flash {
+    0% { opacity: 0; }
+
+    100% { opacity: 1; }
+}
 
 /* categories section  */
 .categories{
@@ -100,12 +159,47 @@ color:red
     padding:3rem 0;
 }
 
+
+ /* product comprision table  */
+  .product-comprison{
+    padding: 4em 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .product-comprison h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+    color:#333;
+  }
+
+  .comparison-table{
+    width: 100%;
+    margin-top:2em;
+    border-collapse: collapse;
+    border:2px solid #ff6347;
+  }
+
+  .comparison-table th,
+  .comparison-table td{
+    padding:1em;
+ border:1px solid #dddddd;
+  }
+  .comparison-table th{
+    background-color: #ff6347;
+    color:#fff;
+    font-weight: bold;
+  }
+  .comparison-table td{
+    text-align: center;
+  }
+
 /* testinonials section  */
 .testimonials{
     background-color: #333;
     color:#fff;
     text-align: center;
-    padding:3rem 0;
+    padding:2rem 0;
 }
 
 footer{
@@ -114,27 +208,49 @@ footer{
     margin:0;
     padding:1.2rem 0;
     text-align: center;
+    box-sizing: border-box;
+}
+footer p{
+    margin: 0 auto;
 }
 
 /* main container grid  */
 .grid{
-    display: flex;
+     display: flex;
     padding:1.2rem 0;
-    justify-content: space-around;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+     /* flex-direction: row; */
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem; */
+    
 }
 
 /* here we use combine category and product  */
-.category,.product{
+.category, .product{
+    width: 200px;
     padding: 10px;
+    margin: 20px 10px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 5px 5px 20px #333;
+    text-align: center;
     transition: 0.5s ease;
+    overflow: hidden;
+    /* animation: fadeIn 3s ease-in; */
 }
-.category,.product img{
-    border-radius: 15px 0;
+.category img,
+.product img{
     width: 200px;
+    
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    animation:fadeIn 0.5s ease-in-out forwards ;
+   
 }
+
 .category:hover{
     transform: scale(1.1);
 }
@@ -147,8 +263,8 @@ footer{
 }
 
 .testimonial{
-
-    margin: 0 20px;
+    width: calc(50%-100px);
+    margin: 20px 20px;
     padding: 10px 20px;
     background-color: #515050;
     border-radius: 8px;

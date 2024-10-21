@@ -17,10 +17,12 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="./E-commerce-javaScript/index.html">Cart</a></li>
+                <li><a href="./E-commerce-javaScript/shop.html">Shop</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="./login.html" target="_blank">Login</a></li>
+
             </ul>
         </nav>
     </header>
@@ -28,8 +30,9 @@
     <section class="hero">
         <div class="container">
             <h2>Welcome to Our Online Store</h2>
-            <p>Discover the best products at unbeatable prices</p>
+            <p class="text-hero">Discover the best products at unbeatable prices</p>
             <button class="cta-button">Shop Now</button>
+            <p class="discount">Special Offer! Get 20% off on all Electronics</p>
         </div>
     </section>
 
@@ -39,7 +42,8 @@
             <div class="grid">
                 <!-- category card will go here  -->
                 <div class="category">
-                    <img src="https://via.placeholder.com/200?text=Electronics" alt="Electronics">
+                    <img src="https://picsum.photos/200
+                    " alt="Electronics">
                     <h3>Electronics</h3>
                 </div>
                 <div class="category">
@@ -61,14 +65,10 @@
     <section class="feature-products">
         <div class="container">
             <h2>Feature Products</h2>
-            <div class="grid">
+            <div class="grid" id="feature-products">
                 <!-- Feature product card will go here  -->
-                <div class="product">
-                    <img src="https://via.placeholder.com/200?text=product1" alt="product1">
-                    <h3>product1</h3>
-                    <p>4.5$</p>
-                </div>
-                <div class="product">
+
+                <!-- <div class="product">
                     <img src="https://via.placeholder.com/200?text=product2" alt="product2">
                     <h3>product2</h3>
                     <p>42.5$</p>
@@ -81,9 +81,54 @@
                 <div class="product">
                     <img src="https://via.placeholder.com/200?text=product4" alt="product4">
                     <h3>product4</h3>
-                    <p>9.15$</p>
-                </div>
+                    <p>9.15$</p> -->
             </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="product-comprison">
+        <div class="container">
+            <h2>Product Features Comparison</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Product</th>
+                        <th rowspan="2">Price</th>
+                        <th rowspan="2">Feature</th>
+                        <th colspan="2">Details</th>
+                    </tr>
+                    <tr>
+                        <th>size</th>
+                        <th>Weight</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product 1</td>
+                        <td>$49.99</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        <td>Large</td>
+                        <td>1.5 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>$59.99</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        <td>Medium</td>
+                        <td>1.2 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Product 3</td>
+                        <td>$69.99</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing
+                            elit</td>
+                        <td>Small</td>
+                        <td>0.8 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
     </section>
 
@@ -95,6 +140,7 @@
                 <div class="testimonial">
                     <p>"Amazing products! Fast shiping and great Customer service."</p>
                     <h3>John Doe</h3>
+
                 </div>
                 <div class="testimonial">
                     <p>"I love shopping here. The prices are unbeatable."</p>
@@ -116,6 +162,7 @@
     <footer class="footer">
         <p>&copy; 2024 Your E-commerce Store. All rights reseved.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
