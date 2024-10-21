@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Shop Now</h1>
+        <!-- Search input -->
+        <div class="search-product">
+            <input type="text" id="search" class="search-box" placeholder="Search for products..." style="flex: 1;">
+            <!-- Price range dropdown -->
+            <div class="select-wrapper" style="flex: 0 0 25%;">
+                <select id="price-range" class="price-range">
+                    <option value="">Select Price Range</option>
+                    <option value="0-50">Under $50</option>
+                    <option value="51-100">$51 - $100</option>
+                    <option value="101-200">$101 - $200</option>
+                    <option value="201-300">$201 - $300</option>
+                    <option value="301-500">$301 - $500</option>
+                    <option value="500-1000">$500 - $1000</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="cart-container">
+        <!-- here insert cart using javaScript  -->
+
+    </div>
+    <script src="shop.js"></script>
+</body>
+
+</html>
