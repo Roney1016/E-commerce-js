@@ -1,0 +1,81 @@
+body, html {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 100vh;
+}
+
+
+.form-container{
+    width: 25%;
+    background-color: #fff;
+    margin:50px auto;
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px grey;
+    text-align: center;
+
+}
+label{
+    font-size: large;
+    background-color: rgb(186, 189, 189);
+
+    color:blue;
+    padding:0.7rem 1rem;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+label:hover{
+    color:red;
+}
+.form{
+    
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(213, 44, 44);
+    margin: 1rem;
+}
+/* signin and signup forms  */
+.form{
+    display: none;
+}
+/* show active form when radio button is checked  */
+#signIn:checked ~ .signIn-form,
+#signUp:checked ~ .signUp-form{
+    display: block; /* display the selected form*/ 
+}
+
+form input{
+    font-size: large;
+    width: 300px;
+display: block;
+margin:20px auto;
+padding:10px 10px;
+border-radius: 5px;
+}
+
+ form button{
+    background-color: #333;
+    color: rgb(249, 251, 252);
+    font-size: larger;
+    width: 100%;
+    margin:20px auto;
+padding:10px 10px;
+   border-radius: 5px;
+   transition: 0.5s ease;
+   cursor: pointer;
+}
+
+button:hover{
+    color:red;
+}
+
+

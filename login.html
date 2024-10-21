@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login for E-commerce</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <label for="signIn">Sign In</label>
+        <input type="radio" name="login-radio" id="signIn" checked>
+
+        <label for="signUp">Sign Up</label>
+        <input type="radio" name="login-radio" id="signUp">
+
+        <div class="form signIn-form">
+            <h1>Sign In</h1>
+            <form action="#" method="post" id="">
+                <input type="text" name="name" placeholder="username" required>
+                <input type="password" name="password" id="pass" placeholder="password" required>
+                <button type="submit">Submit</button>
+                <p>Don't have a account? <label for="signUp">Sign Up Here</label></p>
+            </form>
+        </div>
+
+        <div class="form signUp-form">
+            <h1>Sign UP</h1>
+            <form action="#" method="post" id="">
+                <input type="text" name="name" placeholder="fullName" required>
+                <input type="email" name="email" id="" placeholder="email Address">
+                <input type="password" name="password" id="pass" placeholder="password" required>
+                <button type="submit">Submit</button>
+                <p>Already have a account? <label for="signIn">Sign In Here</label></p>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
